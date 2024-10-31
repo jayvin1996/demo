@@ -1,0 +1,46 @@
+{
+  "name": "demo",
+  "private": true,
+  "version": "0.0.2",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint ./",
+    "lint:fix": "eslint --fix ./",
+    "format": "prettier --write ./",
+    "prepare": "husky",
+    "lint:staged": "lint-staged",
+    "lint:msg": "commitlint --last",
+    "cz": "cz"
+  },
+  "dependencies": {
+    "ant-design-vue": "^4.2.5",
+    "vue": "^3.5.12"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "@eslint/js": "^9.13.0",
+    "@stylistic/eslint-plugin-js": "^2.9.0",
+    "@vitejs/plugin-vue": "^5.1.4",
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^9.13.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-vue": "^9.29.1",
+    "globals": "^15.11.0",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
+    "standard-version": "^9.5.0",
+    "vite": "^5.4.9"
+  },
+  "overrides": {
+    "vite": {
+      "rollup": "npm:@rollup/wasm-node"
+    }
+  }
+}
